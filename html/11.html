@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football 11 - LUM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="../img/ball.png" alt="balon">
+            <p>LineUp Maker</p>
+        </div>
+        <div class="links">
+            <a href="#inicio">Football 11</a>
+            <a href="#nosotros">Football 7</a>
+            <a href="#nosotros">Football 5</a>
+            <button class="loadFormation" onclick=loadFormation()>Load Formation</button>
+            <a href="#contacto">Last News</a>
+            <a href="#contacto">Updates</a>
+        </div>
+    </nav>
+
+    <div class="formation-container">
+        <div class="lineup" id="lineup">
+            <div class="forward">
+                <div class="player">
+                    <div>
+                        <h1>9</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/18922-1702414196.jpg?lm=1 "
+                            alt="Player's photo">
+                    </div>
+                    <h2>Benzema</h2>
+                </div>
+            </div>
+            <div class="wingers">
+                <div class="player">
+                    <div>
+                        <h1>7</h1>
+                        <img src="https://i.imgur.com/KZN6y4g.jpeg" crossorigin="anonymous" alt="Player's photo">
+                    </div>
+                    <h2>Ronaldo</h2>
+                </div>
+                <div class="player">
+                    <div>
+                        <h1>11</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/39381-1658665343.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Bale</h2>
+                </div>
+            </div>
+            <div class="cm-1">
+
+                <div class="player">
+                    <div>
+                        <h1>8</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/31909-1700638741.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Kroos</h2>
+                </div>
+                <div class="player">
+                    <div>
+                        <h1>10</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/27992-1687776160.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Modric</h2>
+                </div>
+            </div>
+            <div class="cmd-1">
+                <div class="player">
+                    <div>
+                        <h1>14</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/16306-1699018876.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Casemiro</h2>
+                </div>
+            </div>
+            <div class="full-1">
+                <div class="player">
+                    <div>
+                        <h1>12</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/44501-1603112392.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Marcelo</h2>
+                </div>
+                <div class="player">
+                    <div>
+                        <h1>15</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/138927-1721026790.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Carvajal</h2>
+                </div>
+            </div>
+            <div class="cb-1">
+                <div class="player">
+                    <div>
+                        <h1>4</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/25557-1694502812.jpg?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Ramos</h2>
+                </div>
+                <div class="player">
+                    <div>
+                        <h1>3</h1>
+                        <img src="https://img.a.transfermarkt.technology/portrait/big/14132-1606396269.png?lm=1"
+                            alt="Player's photo">
+                    </div>
+                    <h2>Pepe</h2>
+                </div>
+            </div>
+            <div class="gk">
+                <div class="player">
+                    <div>
+                        <h1>1</h1>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Courtois_2018_%28cropped%29.jpg"
+                            alt="Player's photo" crossorigin="anonymous">
+
+                    </div>
+                    <h2>Courtois</h2>
+                </div>
+            </div>
+        </div>
+        <div class="players">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GK</td>
+                        <td>1</td>
+                        <td>Courtois</td>
+                        <td><img class="photo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Courtois_2018_%28cropped%29.jpg"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>RB</td>
+                        <td>15</td>
+                        <td>Carvajal</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/138927-1721026790.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>CB</td>
+                        <td>3</td>
+                        <td>Pepe</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/14132-1606396269.png?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>CB</td>
+                        <td>4</td>
+                        <td>Ramos</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/25557-1694502812.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>LB</td>
+                        <td>12</td>
+                        <td>Marcelo</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/44501-1603112392.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>CDM</td>
+                        <td>14</td>
+                        <td>Casemiro</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/16306-1699018876.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>CM</td>
+                        <td>10</td>
+                        <td>Modric</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/27992-1687776160.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>CM</td>
+                        <td>8</td>
+                        <td>Kroos</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/31909-1700638741.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>RW</td>
+                        <td>11</td>
+                        <td>Bale</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/39381-1658665343.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>LW</td>
+                        <td>7</td>
+                        <td>Ronaldo</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/8198-1748102259.jpg?lm=1"
+                                alt="Default photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                    <tr>
+                        <td>CF</td>
+                        <td>9</td>
+                        <td>Benzema</td>
+                        <td><img class="photo"
+                                src="https://img.a.transfermarkt.technology/portrait/big/18922-1702414196.jpg?lm=1 "
+                                onerror="this.onerror=null; this.src='../img/default.png';" alt="Player's photo"></td>
+                        <td><img class="trash" src="../img/delete.png" alt="Trash can ico"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="actions">
+            <div class="actions-formations">
+                <label for="formations">Formation:</label>
+                <select id="formations" name="formations">
+                    <option value="4-3-3">4-3-3</option>
+                    <option value="4-4-2">4-4-2</option>
+                    <option value="4-2-3-1">4-2-3-1</option>
+                    <option value="4-2-1-2">4-2-1-2</option>
+                    <option value="3-5-2">3-5-2</option>
+                    <option value="3-4-3">3-4-3</option>
+                </select>
+            </div>
+
+            <div class="actions-buttons">
+                <button class="addPlayer" onclick=addPlayer()>Add Player</button>
+                <button class="downloadImage" onclick=downloadImage()>Download Image</button>
+                <button class="exportFormation" onclick=exportFormation()>Export Formation</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>© UFPS - 2025</h3>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+
+</html>
