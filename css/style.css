@@ -597,3 +597,10 @@ footer h3 {
     color: rgb(61, 177, 131) !important;
     cursor: default;
 }
+
+.media {
+    display: flex;
+    justify-content: center;
+    gap: 14vw;
+    margin-bottom: 7vw;
+}
