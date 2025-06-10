@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - LUM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="../img/ball.png" alt="balon">
+            <p>LineUp Maker</p>
+        </div>
+        <div class="links">
+            <a href="11.html">Football 11</a>
+            <a href="7.html">Football 7</a>
+            <a href="5.html">Football 5</a>
+            <button class="loadFormation" id="loadFormation">Load Formation</button>
+            <input type="file" id="jsonFileInput" accept=".json" style="display: none;">
+            <a href="updates.html">Last Updates</a>
+            <a href="about.html">About Me</a>
+        </div>
+    </nav>
+
+    <h1>LAST UPDATES</h1>
+
+    <div class="updates" id="updates">
+        <div class="update">
+            <div class="update-info">
+                <h2>The 3-5-2 formation for football 11 has been added.</h2>
+                <h3>7/07/2007</h3>
+            </div>
+            <img src="https://themastermindsite.com/wp-content/uploads/2019/10/flat-3-5-2-1.png" alt="">
+        </div>
+        <div class="update">
+            <div class="update-info">
+                <h2>The 3-5-2 formation for football 11 has been added.</h2>
+                <h3>7/07/2007</h3>
+            </div>
+            <img src="https://themastermindsite.com/wp-content/uploads/2019/10/flat-3-5-2-1.png" alt="">
+        </div>
+        <div class="update">
+            <div class="update-info">
+                <h2>The 3-5-2 formation for football 11 has been added.</h2>
+                <h3>7/07/2007</h3>
+            </div>
+            <img src="https://themastermindsite.com/wp-content/uploads/2019/10/flat-3-5-2-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="pagination" id="pagination">
+        <button id="FirstBtn">&lt;&lt;</button>
+        <button id="BackBtn">&lt;</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="current-pag">4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button id="NextBtn">&gt;</button>
+        <button id="LastBtn">&gt;&gt;</button>
+    </div>
+
+
+    <footer>
+        <h3>© UFPS - 2025</h3>
+    </footer>
+
+    <script src="../js/update.js"></script>
+</body>
+
+</html>

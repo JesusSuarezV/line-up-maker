@@ -85,9 +85,7 @@ footer h3 {
 .formation-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* dos columnas iguales */
     grid-template-rows: 1fr 1fr;
-    /* dos filas */
     gap: 10px;
 }
 
@@ -98,12 +96,28 @@ footer h3 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.49));
     background-size: contain;
     background-position: center;
-
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+
+.lineup7 {
+    position: relative;
+    margin: 2.7vw 2.1vw -12vw 2.1vw;
+    background-image: url('../img/field.png');
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.49));
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
 
 .actions {
     margin: 0 4.2vw;
@@ -113,13 +127,49 @@ footer h3 {
 
 }
 
+.actions7 {
+    margin: 0 4.2vw;
+    font-size: 1.2vw;
+    display: flex;
+    gap: 2.7vw;
+    padding-top: 12vw;
+
+}
+
+.lineup5 {
+    position: relative;
+    margin: 2.7vw 2.1vw -14.2vw 2.1vw;
+    background-image: url('../img/field.png');
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.49));
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.actions5 {
+    margin: 0 4.2vw;
+    font-size: 1.2vw;
+    display: flex;
+    gap: 2.7vw;
+    padding-top: 14.2vw;
+}
+
+
 
 .actions-formations {
     display: flex;
 }
 
 
-#formations {
+#formations,
+#positions,
+#playerName,
+#playerNumber,
+#playerImage {
     background: #E9E9E9;
     border: none;
     font: inherit;
@@ -216,6 +266,14 @@ footer h3 {
     height: 4.2vw;
 }
 
+.trash-disable {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    width: 2.7vw;
+    height: 2.7vw;
+}
+
+
 .trash {
 
     width: 2.7vw;
@@ -241,6 +299,7 @@ footer h3 {
     width: 1vw;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
     height: 2.7vw;
+    z-index: 1;
 }
 
 .player h2 {
@@ -266,6 +325,7 @@ footer h3 {
     position: absolute;
     margin-top: 3.5vw;
     display: flex;
+    z-index: 1;
 }
 
 .wingers {
@@ -278,6 +338,26 @@ footer h3 {
     margin: 0 4.2vw;
 }
 
+.forward-2 {
+    position: absolute;
+    margin-top: 1.7vw;
+    display: flex;
+    z-index: 1;
+}
+
+.forward-3 {
+    position: absolute;
+    margin-top: 2.8vw;
+    display: flex;
+    z-index: 1;
+}
+
+.cam-1 {
+    position: absolute;
+    margin-top: 9.1vw;
+    display: flex;
+}
+
 .cm-1 {
     position: absolute;
     margin-top: 11.7vw;
@@ -288,9 +368,63 @@ footer h3 {
     margin: 0 4.2vw;
 }
 
+
+.cm-2 {
+    position: absolute;
+    margin-top: 7.7vw;
+    display: flex;
+}
+
+.cm-2 .player {
+    margin: 0 5.6vw;
+}
+
+.cm-3 {
+    position: absolute;
+    margin-top: 9.1vw;
+    display: flex;
+}
+
+.cm-3 .player {
+    margin: 0 1.7vw;
+
+}
+
+.wingers-2 {
+    position: absolute;
+    margin-top: 7.7vw;
+    display: flex;
+}
+
+.wingers-2 .player {
+    margin: 0 0.7vw;
+}
+
+.cmd-2 {
+    position: absolute;
+    margin-top: 13.5vw;
+    display: flex;
+}
+
+.cmd-2 .player {
+    margin: 0 0.17vw;
+}
+
 .cmd-1 {
     position: absolute;
     margin-top: 15vw;
+    display: flex;
+}
+
+.cmd-3 {
+    position: absolute;
+    margin-top: 12.7vw;
+    display: flex;
+}
+
+.cmd-4 {
+    position: absolute;
+    margin-top: 11.7vw;
     display: flex;
 }
 
@@ -304,6 +438,16 @@ footer h3 {
     margin: 0 9.1vw;
 }
 
+.full-2 {
+    position: absolute;
+    margin-top: 12.7vw;
+    display: flex;
+}
+
+.full-2 .player {
+    margin: 0 7.5vw;
+}
+
 
 .cb-1 {
     position: absolute;
@@ -311,7 +455,34 @@ footer h3 {
     display: flex;
 }
 
-.cb-1 .player {
+.cb-1 .player,
+.cb-2 .player {
+    margin: 0 1vw;
+}
+
+.cb-2 {
+    position: absolute;
+    margin-top: 18.7vw;
+    display: flex;
+}
+
+.cb7 {
+    position: absolute;
+    margin-top: 17vw;
+    display: flex;
+}
+
+.cb7 .player {
+    margin: 0 2.1vw;
+}
+
+.cm7 {
+    position: absolute;
+    margin-top: 10vw;
+    display: flex;
+}
+
+.cm7 .player {
     margin: 0 1vw;
 }
 
@@ -319,4 +490,110 @@ footer h3 {
     position: absolute;
     margin-top: 24.7vw;
     display: flex;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.modal {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+.save-player {
+    color: #FFFF;
+    border: none;
+    border-radius: 100vw;
+    font-size: 1.7vw;
+    font: inherit;
+    text-align: center;
+    width: 17vw;
+    height: 2.1vw;
+    cursor: pointer;
+
+    background: #3DB183;
+}
+
+.updates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update {
+    margin-bottom: 2.7vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7e7e7;
+    border-radius: 14px;
+    padding: 1vw 0vw 2vw 2vw;
+    width: 35vw;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+}
+
+.update img {
+    width: 4.9vw;
+    height: 4.9vw;
+    padding: 1.4vw;
+    border-radius: 49px;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    text-align: center;
+}
+
+.pagination button {
+    all: unset;
+    color: white;
+    background-color: rgb(53, 108, 87);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 7px;
+}
+
+.pagination button:hover {
+    background-color: rgb(61, 177, 131);
+    cursor: pointer;
+}
+
+.pagination button.current-pag {
+    background-color: white !important;
+    color: rgb(61, 177, 131) !important;
+    cursor: default;
 }
